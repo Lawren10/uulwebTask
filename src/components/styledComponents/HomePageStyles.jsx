@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { styled } from "@mui/material/styles";
-import { Stack, Toolbar,AppBar, Grid, Box } from "@mui/material";
+import { Stack, Toolbar,AppBar, Grid, Box, Chip } from "@mui/material";
 
 export const HeroContainer = styled(Grid)(({ theme }) => `
 
@@ -36,4 +36,22 @@ export const HeroRightContentImage = styled('img')(({ theme }) => `
 export const HomeSectionCenter = styled(Box)(({ theme }) => `
    width: 80%;
    margin: 0 auto;
+`)
+
+
+export const HomeFocusItem = styled(Grid)(({background})=>`
+  background-color: ${background};
+  padding: 1rem;
+  width:20%;
+`)
+
+export const HomeConceptItem = styled(Grid)(({theme})=>`
+`)
+
+export const CaseStudyChip = styled(Chip)(({theme})=>`
+  background-color: ${theme.palette.appWhite.main};
+  border: 1px solid ${theme.palette.appBlack.main};
+  font-size: ${theme.typography.body2.fontSize};
+  padding: 1.5rem;
+  border-radius:2rem;
 `)

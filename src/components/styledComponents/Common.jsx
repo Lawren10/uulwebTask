@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { styled } from "@mui/material/styles";
-import {Button, Paper} from "@mui/material/";
+import {Button, Chip, Paper} from "@mui/material/";
 
 export const AppMainButton = styled(Button)(({theme})=>`
   background-color: ${theme.palette.appBlack.main};
@@ -49,5 +49,6 @@ export const AppCardContainer = styled(Paper)(({ theme }) => `
    background-color: ${theme.palette.appWhite.main}; 
    border-radius: 1rem;
    padding:1.5rem;
+   height:100%;
 `)
  
